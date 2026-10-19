@@ -1,7 +1,7 @@
-# Importação de funções específicas conforme orientação da Agenda 11
+# Importação de funções específicas 
 from colorama import Fore, Style
 
-# 1. Lista de strings armazenando as mensagens conforme solicitado pela atividade
+# 1. Lista de strings armazenando as mensagens 
 SITUACOES_RESERVATORIO = [
     "Nível 1: Muito baixo (crítico)",
     "Nível 2: Baixo",
@@ -31,7 +31,7 @@ def exibir_status_reservatorio(nivel):
         mensagem = SITUACOES_RESERVATORIO[nivel - 1]
         cor = obter_cor_nivel(nivel)
         
-        # 3. Exibição concatenando a Cor + Mensagem (padrão utilizado na página 14 da apostila)
+        # 3. Exibição concatenando a Cor + Mensagem 
         print(cor + mensagem)
     else:
         print(Fore.RED + f"Erro: Nível {nivel} inválido.")
